@@ -36,9 +36,9 @@ This project highlights practical skills in Linux administration, system securit
 -Removed unused and obsolete packages to minimize vulnerabilities
 
 Commands used:
-sudo apt update && sudo apt upgrade -y
-sudo apt autoremove -y 
-sudo apt autoclean
+-sudo apt update && sudo apt upgrade -y
+-sudo apt autoremove -y 
+-sudo apt autoclean
 
 ### SSH Hardening
 - Secured remote access to prevent unauthorized login attempts
@@ -48,11 +48,11 @@ sudo apt autoclean
 - Enabled idle session timeouts
 
 Key configuration changes:
-port 2222
-PermitRootLogin no
-PasswordAuthentication no
-ClientAliveInterval 300
-ClientAliveCountMax 0
+-port 2222
+-PermitRootLogin no
+-PasswordAuthentication no
+-ClientAliveInterval 300
+-ClientAliveCountMax 0
 
 ###Firewall Configuration (UFW)
 - Implemented a host-based firewall to control network traffic
@@ -62,11 +62,11 @@ ClientAliveCountMax 0
 - Allowed all outgoing traffic
 
 Commands used:
-sudo ufw enable
-sudo ufw allow 2222/tcp
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo ufw status verbose
+-sudo ufw enable
+-sudo ufw allow 2222/tcp
+-sudo ufw default deny incoming
+-sudo ufw default allow outgoing
+-sudo ufw status verbose
 
 ---
 
@@ -77,7 +77,7 @@ sudo ufw status verbose
 - Generated SHA-256 hashes for critical configuration files to detect unauthorized changes
 
 Commands used:
-sudo chmod 700 /boot
-sudo find / -type f \(-perm -4000 -o -perm -2000 \) -exec ls -l {} \; 2>/dev/null
-chmod /home/$USER
-sha256sum /etc/ssh/sshd_config
+-sudo chmod 700 /boot
+-sudo find / -type f \(-perm -4000 -o -perm -2000 \) -exec ls -l {} \; 2>/dev/null
+-chmod /home/$USER
+-sha256sum /etc/ssh/sshd_config
