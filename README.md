@@ -2,8 +2,8 @@
 
 ## Project Overview
 This project demonstrates hands-on Linux system hardening techniques performed on **Parrot OS**, a Debian-based security-focused
-sed Linux distribution. The goal was to reduce the system's attack surface by applying industry standard security best practices commonly
-ces commonly used in enterprise and SOC environments.
+sed Linux distribution. The goal was to reduce the system's attack surface by applying industry-standard security best practices commonly
+ used in enterprise and SOC environments.
 
 This project highlights practical skills in Linux administration, system security, and documentation.
 
@@ -12,8 +12,8 @@ This project highlights practical skills in Linux administration, system securit
 ##Objectives
 - Secure remote access to the system
 - Reduce exposure to common attack vectors
-- configue host-based firewall protections
-- Audit system permissions and priviledged files
+- configure host-based firewall protections
+- Audit system permissions and privileged files
 - Document changes clearly and professionally
 - Troubleshoot SSH configuration
 
@@ -33,10 +33,9 @@ This project highlights practical skills in Linux administration, system securit
 
 ### System Update & Cleanup
 -Updated all installed packages to the latest versions
--Removed unused and obsolete packages to minimize vulnerabilites
+-Removed unused and obsolete packages to minimize vulnerabilities
 
 Commands used:
-```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt autoremove -y 
 sudo apt autoclean
